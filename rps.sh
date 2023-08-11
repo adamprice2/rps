@@ -60,9 +60,9 @@ main ()
 
 	for i in 0 1 ; do
 		if [[ "${player_name[$i]}" =~ "Computer" ]] ; then
-			player_val[$i]=$(get_computer)
+			player_val[i]=$(get_computer)
 		else
-			player_val[$i]=$(get_player "${player_name[$i]}" )
+			player_val[i]=$(get_player "${player_name[$i]}" )
 		fi
 	done
 
